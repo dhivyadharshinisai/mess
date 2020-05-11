@@ -1,2 +1,209 @@
-# mess
-simple site
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sri Karpagam oil stores</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+.side {
+  -ms-flex: 30%;
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+ <h1 align="center">SRI KARPAGAM OIL STORES</h1>
+ <h2 align="center" style="color: grey">We promise to deliver the Pure Chekku Edible Oils in Whole sale price.</h2>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="tel:+91 9994427383">Call</a>
+  <a href="https://www.facebook.com/Sri-karpagam-oil-store-112406977062684/">Facebook</a>
+  <a href="#" class="right">About</a>
+</div>
+
+<div class="row">
+  <div class="side">
+<form onsubmit="return false" oninput="    totalamount.value = Math.round(oil.value*kgs.value);">
+  <h1>Calculate Your Products Rate Here..</h1>
+  <h2>Select Your Oil</h2>
+  <select id="oil">
+    <option value="218" id="groundnut">Goundnut Oil</option>
+    <option value="238" id="coconut" >Coconut Oil</option>
+    <option value="308" id="nallanai" >Nallanai</option>
+  </select>
+  <h2>kilograms</h2>
+  <input type="text" name="kgs" id="kgs" placeholder="Enter The Kgs">
+  <h2>The Rate Is ..</h2>
+  <output name="totalamount" id="totalamount" for="principal period interest">0.Rs</output><p>Rs Only..</p>
+
+  </div>
+  <div class="main">
+    <div class="card">
+  <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients-usa.com/article/2019/03/27/personal-history-leads-physician-to-coconut-oil-for-dementia-relief/9302915-1-eng-GB/Personal-history-leads-physician-to-coconut-oil-for-dementia-relief_wrbm_large.jpg" style="width:100%">
+  <h1>Coconut Oil</h1>
+  <p class="price">Rs.238</p>
+</div><h2>Benfits Of Coconut Oil</h2>
+<p>In a word, coconut oil is a body-friendly foodstuff that is heart-healthy, great for oral health, and other health benefits. Structurally, coconut oil is taken from coconut kernels. It's tasteless and colorless, and is available for consumer usage in refined and unrefined coconut oil.Approximately 60% of all coconut oils are comprised of the above three fatty acids, while 90% of coconut oil fats is comprised of heart-healthy saturated fats. The latter figure is a high one, and not one that is recommendable to many doctors. For example, 14% of olive oil calories come from saturated fat, and 63% of butter's calories come from saturated fat.</p>
+    <div class="card">
+  <img src="https://5.imimg.com/data5/EW/ES/MY-38174495/cold-pressed-chekku-sesame-oil-500x500.jpg" style="width:100%">
+  <h1>Nallanai Oil</h1>
+  <p class="price">Rs.308</p>
+</div><h2>Benifits Of Nallanai</h2>
+ <p>Sesame is believed to possess many magical powers. Right from our childhood, the benefits of sesame oil is stored in our memory when the famous folk tale “Ali Baba and the Forty Thieves” documented its benefits. Sesame seeds are used in culinary as well as in traditional medicines for their nutritive, preventive and curative properties.
+Its oil seeds are rich in omega-6 fatty acids, flavonoid phenolic anti-oxidants, vitamins and dietary fiber which possess many health promoting benefits.</p>
+ <div class="card">
+  <img src="https://5.imimg.com/data5/OJ/JX/MY-41160176/natural-groundnut-oil-500x500.jpg" style="width:100%">
+  <h1>Groundnut Oil Oil</h1>
+  <p class="price">Rs.218</p>
+</div>
+<h2>Benifits Of Groundnut Oil</h2>
+<p>This oil can be used in different forms of cooking such as frying, seasoning and grilling. It is considered healthy owing to its high content of mono and polyunsaturated fats, which in turn help in lowering LDL “bad” cholesterol. Groundnut oil is also a good source of vitamin E. This vitamin is known to act as an anti-oxidant by protecting the skin from acne or scars.</p>
+<h1 align="center">Place Your Order Here</h1>
+    <form action="mailto:mohanrajpdy@gmail.com" method="post" enctype="text/plain" class="container">
+  <fieldset>
+  <legend>ORDER HERE:</legend>
+<b>Name:</b><br>
+<input type="text" name="name" placeholder="Enter your Name"><br>
+<b>E-mail:</b><br>
+<input type="text" name="mail" placeholder="Enter Your Mail ID"><br>
+<b>PHONE NUMBER:</b><br>
+<input type="text" name="phone" placeholder="Enter Your Phone Number" ><br>
+<b>ADDRESS:</b><br>
+ <textarea id="subject" name="address" placeholder="Enter Your Address" style="height:150px"></textarea>
+ <b>Type Your Order Here..</b>
+  <textarea id="subject" name="order" placeholder="oil name/kgs" style="height:150px"></textarea>
+<input type="submit" value="Send" onclick="myfunction()">
+<input type="reset" value="Reset">
+</fieldset>
+</form>
+
+  </div>
+</div>
+
+<div class="footer">
+  <h3 align="center" style="color: black">CONTACT  US:</h3><div>
+<img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c543.png" alt="photo varala" height="50" width="50">&nbsp; &nbsp; &nbsp;
+<img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19748.png" alt="photo varala" height="40" width="40">
+&nbsp; &nbsp; &nbsp;<p align="right" style="color: grey">© 2020 sri karpagam oil stores. All rights reserved</p>
+</div>
+</div>
+</body>
+</html>
